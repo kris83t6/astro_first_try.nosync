@@ -1,15 +1,29 @@
 ---
+import Card from "../components/Card.astro";
+import Button from "../components/Button.astro";
+import Navigation from "../components/Navigation.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="style.css" />
+    <title>Astro</title>
+  </head>
+  <body>
+    <Navigation />
+    <h1>Astro</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto eveniet fuga dolores? Inventore, magni ipsam possimus laboriosam ad quisquam excepturi quidem, sed, cupiditate ducimus quia? Natus, sint mollitia. Ea.</p>
+    <main>
+      <Button variant="primary" size="small">TEXT</Button>
+      <Button variant="secondary" size="medium">TEXT</Button>'
+      <Button variant="secondary" size="large">TEXT</Button>
+      <!-- <Card header="Hej Verden" text="lorem ipsum dollar" />
+      <Card header="Hej Hold A" text="lorem ipsum dollar" />
+      <Card header="Hej Hold B" text="lorem ipsum dollar" test="noget" /> -->
+    </main>
+  </body>
 </html>
